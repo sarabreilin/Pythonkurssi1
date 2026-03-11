@@ -22,4 +22,5 @@ while arvaus != luku:
 
 
 print("Oikea vastaus!")
+print("Oikea luku oli", luku)
 
