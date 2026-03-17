@@ -3,7 +3,20 @@
 #viisi suurinta suuruusjärjestyksessä suurimmasta alkaen. Vihje: listan alkioiden
 #lajittelujärjestyksen voi kääntää antamalla sort-metodille argumentiksi reverse=True
 
-luku = float(input("Syötä luku:"))
 
 luvut = []
+
+while True:
+    luku = input("Syötä luku, tyhjä merkkijono lopettaa:")
+    if luku == "":
+        break
+    luku = int(luku)
+    luvut.append(luku)
+
+luvut.sort(reverse=True)
+print(luvut[:5])
+
+
+
+
 
