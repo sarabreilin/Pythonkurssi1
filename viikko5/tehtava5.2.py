@@ -10,10 +10,15 @@ while True:
     luku = input("Syötä luku, tyhjä merkkijono lopettaa:")
     if luku == "":
         break
-    luku = int(luku)
-    luvut.append(luku)
+
+    if luku != "":
+
+        luku = int(luku)
+        luvut.append(luku)
 
 luvut.sort(reverse=True)
+
+print("Viisi suurinta lukua:")
 print(luvut[:5])
 
 
